@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="page">
+
     <!--Navigation bar-->
    <header>
-    
-    <nav class="nav-bar">
+     <nav class="nav-bar">
         <ul>
         <li><a href="#home">Home</a></li>
          <li><a href="#about">About</a></li>
          <li><a href="#projects">Projects</a></li>
          <li><a href="#contact">Contact</a></li>
          </ul>
-    </nav>
-   
+     </nav>
     </header>
  
      <!--Hero section-->
 <main>
-<section class="hero-container">
+<section id="home">
     <div class="hero-left">
         <img src="media/hero-img.jpg" alt="a picture of me" class="hero-img">
     </div>
@@ -32,9 +33,17 @@
         <h1>Hello I'm Neo Kale</h1>
         <p>Aspiring Frontend Developer focused on building practical web solutions  
         </p>
+
+        <div class="button-container">
         <div class="button-cta">
+
        <a href="#about">view my story</a>
+        </div>
+        
+        <div class="button-cta">
        <a href="#projects">View projects</a>
+        </div>
+
         </div>
     </div>
 
@@ -43,48 +52,57 @@
 </section>
 <!--About section-->
 <section id="about" >
-    <div class="about-left">
-        <p>I'm an aspiring frontend developer based in South Africa.
-          I'm currently focused on learning and building with HTML, CSS, and JavaScript.
-          I'm documenting my progress through real projects and improving one step at a time.
-          My goal is to become employable through consistent practice and proof of work, not shortcuts.
+    <h2>About Me</h2>
+      <div class="about-container">
+            <p>I'm an aspiring frontend developer based in South Africa, focused on building clean, structured, and maintainable user interfaces using HTML, CSS, and JavaScript.</p>
 
-        </p>
+           <p>Right now, I'm strengthening my fundamentals especially layout systems, spacing, responsiveness, and code organization, so that I can build interfaces that 
+             scale instead of breaking as projects grow.</p> 
+
+            <p>I learn best by building real projects and iterating on them. Instead of chasing shortcuts or trends, I focus on understanding how things actually work, breaking 
+            problems down, and improving through repetition and feedback</p>
+
+            <p>I'm documenting my progress through practical work and treating each project as an opportunity to sharpen my judgment, not just my technical syntax.</p> 
+
+            <p>My goal is to become employable through proof of work, consistency, and discipline. I care about building useful systems, not just completing tutorials.</p>
+             <p>My work will be defined by my projects, not by claims.</p>
+         </div>
+
+      
+     <div class="skills-container">
+        
+    <div class="technical-skills">
+        <h2>Skills & Tools</h2>
+        <h3>Frontend</h3>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
     </div>
 
-    <div id="about-right">
-        <h2>Skills</h2>
-        <div class="skills-card">
-            <img src="media/HTML logo.png" alt="A logo of hmtl" class="logo">
-            <h3>HTML5</h3>
+        <div class="tools">
+        <h3>Tools </h3>
+        <ul>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>VS Code</li>
+        </ul>
+        
         </div>
 
-
-        <div class="skills-card">
-            <img src="media/CSS logo.png" alt="A logo of CSS" class="logo">
-            <h3>CSS3</h3>
-        </div>
-
-        <div class="skills-card">
-            <img src="media/JS logo.png" alt="A logo of js" class="logo">
-            <h3>JavaScript(Basics)</h3>
-        </div>
-
-        <div class="skills-card">
-            <img src="media/git logo.png" alt="A logo of git" class="logo">
-            <h3>Git</h3>
-        </div>
-
-        <div class="skills-card">
-            <img src="media/github logo.jpg" alt="A logo of github" class="logo">
-            <h3>GitHub</h3>
-        </div>
-
-        <div class="skills-card">
-            <img src="media/responsive logo.png" alt="A logo of responsive" class="logo">
-            <h3>Resposnive Design(learning)</h3>
-        </div>
+        <div class="progress">
+        <h3>How I Work</h3>
+        <ul>
+            <li>Priotize fundamentals over shortcuts</li>
+            <li>I break problems into small, solvable steps</li>
+            <li>I build even when things are slow and imperfect</li>
+            <li>I learn through repetition and reflection</li>
+            <li>I value consistency, discipline and long-term growth</li>
+        </ul>
     </div>
+
+   </div>
 
 </section>
 <!--Project Section-->
@@ -94,27 +112,24 @@
     <div class="project-container">
 
     <div class="project-card">
-        <h3>progress</h3>
-        <img src="#" alt="project project">
-        <p>Project 1</p>
+        <h3>Project 1</h3>
+        <p>Description</p>
         <a href="#">live</a>
         <a href="#">demo</a>
 
     </div>
 
     <div class="project-card">
-        <h3>progress</h3>
-        <img src="#" alt="project project">
-        <p>Project 2</p>
+        <h3>Project 2</h3>
+        <p>Description</p>
         <a href="#">live</a>
         <a href="#">demo</a>
 
     </div>
 
     <div class="project-card">
-        <h3>progress</h3>
-        <img src="#" alt="project project">
-        <p>Project 3</p>
+        <h3>Project 3</h3>
+        <p>Description</p>
         <a href="#">live</a>
         <a href="#">demo</a>
 
@@ -126,8 +141,10 @@
 <!--Contact Section-->
 <section id="contact">
     <div class="contact-container">
-    <h1>Let's connect</h1>
-    <a href="mailto:neokale10@gmail,com">neokale10@gmail.com</a>
+   
+    <h2>Let's connect</h2>
+    <h3>Open to opportunities, learning and collaboration</h3>
+    <a href="mailto:neokale10@gmail.com">neokale10@gmail.com</a>
     <p>github :<a href="https://github.com/neooza1">Link here</a></p>
     <p>linkedIn :<a href="https://github.com/neooza1">Link here</a></p>
     
@@ -136,9 +153,12 @@
 
 </section>
 </main>
-</body>
 
 <footer>
-    <p>Where to find me ??</p>
+    <p>Neo Kale, Frontend dev</p>
 </footer>
+</div>
+</body>
+
+
 </html>
