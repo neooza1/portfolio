@@ -205,6 +205,16 @@ ul {
   
 }
 
+.project-card.disabled {
+  opacity: 0.5;
+}
+
+.project-card.disabled a {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+
 /*contact-section*/
 
 .contact-container p{
